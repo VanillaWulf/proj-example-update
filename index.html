@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mod Studio</title>
+</head>
+
+<body>
+  <header>
+    <!-- допускается вместо р - a>img, а также nav>a>img+ul>li>a -->
+    <p>Mod</p>
+    <nav>
+      <ul>
+        <!-- якроные ссылки привествуются -->
+        <li><a href="#biography">Biography</a></li>
+        <li><a href="#designers">Designers</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#strong-points">Strong points</a></li>
+      </ul>
+    </nav>
+    <img src="./img/dialog-icon.svg" alt="dialog">
+  </header>
+
+  <main>
+    <section>
+      <h1>Mod Studio</h1>
+      <!-- допускается вместо p - h2 -->
+      <p>Modern Web Studio</p>
+    </section>
+
+    <section id="biography">
+      <img src="img/biography-img.jpg" alt="Katya Mills photo">
+      <h2>Biography</h2>
+      <h3>Katya Mills</h3>
+      <!-- допускается вместо р - h4 -->
+      <p>Art Director</p>
+      <ul>
+        <li>Scenography</li>
+        <li>Styling</li>
+        <li>Creative Photography</li>
+        <li>Design</li>
+      </ul>
+      <!-- q тут не желателен, так как он нужен для коротких цитат, для длинных подходит blockquote-->
+      <blockquote>
+        "The more I deal with the work
+        as something that is my own,
+        as something that is personal,
+        the more successful it is."
+      </blockquote>
+    </section>
+
+    <section id="designers">
+      <h2>Designers</h2>
+      <ul>
+        <li>
+          <!-- допускается без article -->
+          <article>
+            <img src="./img/designer-1-jess-wonder-img.jpg" alt="jess-wonder">
+            <!-- обращайте внимание на регистр, должен быть маленький, чтобы управлять в css им -->
+            <h3>Jess wonder</h3>
+
+            <!-- допускается для from & skills h4, только они должно быть вне p - h4+p+h4+ul или h4+p+h4+p -->
+            <p>From/ Be more flower</p>
+            <!-- допускается использовать списка в skills, только его нужно вынести из р - p + ul -->
+            <p>Skills/ Design Strategy / Marketing</p>
+          </article>
+        </li>
+        <li>
+          <!-- допускается без article -->
+          <article>
+            <img src="./img/designer-2-4-kameron-clein-img.jpg" alt="kameron clein">
+            <!-- обращайте внимание на регистр, должен быть маленький, чтобы управлять в css им -->
+
+            <h3>kameron clein</h3>
+            <!-- допускается для from & skills h4, только они должно быть вне p - h4+p+h4+ul или h4+p+h4+p -->
+            <p>From/ Be more flower</p>
+            <!-- допускается использовать списка в skills, только его нужно вынести из р - p + ul -->
+            <p>Skills/ Design Strategy / Marketing</p>
+          </article>
+
+        </li>
+        <li>
+          <!-- допускается без article -->
+          <article>
+            <img src="./img/designer-3-louisse-red-img.jpg" alt="louisse red">
+            <!-- обращайте внимание на регистр, должен быть маленький, чтобы управлять в css им -->
+            <h3>louisse red</h3>
+            <!-- допускается для from & skills h4, только они должно быть вне p - h4+p+h4+ul или h4+p+h4+p -->
+            <p>From/ Be more flower</p>
+            <!-- допускается использовать списка в skills, только его нужно вынести из р - p + ul -->
+            <p>Skills/ Design Strategy / Marketing</p>
+          </article>
+        </li>
+        <li>
+          <!-- допускается без article -->
+          <article>
+            <img src="./img/designer-2-4-kameron-clein-img.jpg" alt="kameron clein">
+            <!-- обращайте внимание на регистр, должен быть маленький, чтобы управлять в css им -->
+            <h3>kameron clein</h3>
+            <!-- допускается для from & skills h4, только они должно быть вне p - h4+p+h4+ul или h4+p+h4+p -->
+            <p>From/ Be more flower</p>
+            <!-- допускается использовать списка в skills, только его нужно вынести из р - p + ul -->
+            <p>Skills/ Design Strategy / Marketing</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section id="testimonials">
+      <ul>
+        <li>
+          <!-- допускается вместо p - h3 -->
+          <p>Creativity</p>
+          <!-- тут лучше сделать заглушку, так как скопированный из контнта адрес не сработает -->
+          <a href="#">www.whitepapers.com</a>
+        </li>
+        <li>
+          <!-- допускается вместо p - h3 -->
+          <p>Creativity</p>
+          <!-- тут лучше сделать заглушку, так как скопированный из контнта адрес не сработает -->
+          <a href="#">www.whitepapers.com</a>
+        </li>
+        <li>
+          <!-- допускается вместо p - h3 -->
+          <p>Website</p>
+          <!-- тут лучше сделать заглушку, так как скопированный из контнта адрес не сработает -->
+          <a href="$">www.whitepapers.com</a>
+        </li>
+      </ul>
+      <img src="./img/testimonials-1-cafe.jpg" alt="testimonials cafe">
+      <h2>Testimonials</h2>
+      <!-- поскольку тут нет скобочек цитаты, то допускается вместо blockquote - p -->
+      <blockquote>I just really want to do good work and work with some great people, people who challenge me.
+      </blockquote>
+      <img src="./img/testimonials-2-bag.jpg" alt="testimonials cafe">
+    </section>
+
+    <section id="strong-points">
+      <h2>Strong points</h2>
+      <img src="./img/strong-points-1-laptop-img.jpg" alt="laptop">
+      <img src="./img/strong-points-2-sofa-img.jpg" alt="sofa">
+      <!-- можно без дива -->
+      <div>
+        <h3>Strengths</h3>
+        <ul>
+          <li>Interiors</li>
+          <li>Outdoors</li>
+          <li>Portraits</li>
+          <li>Styling</li>
+          <li>Events</li>
+          <li>Architecture</li>
+          <li>Design</li>
+          <li>Celebrations</li>
+          <li>Fashion</li>
+          <li>Nature</li>
+        </ul>
+      </div>
+      <img src="./img/strong-points-3-cafe-img.jpg" alt="cafe">
+    </section>
+  
+  </main>
+
+  <footer class="footer">
+    <!-- можно и обычным дивом, но адрес предпочтительнее -->
+    <address>
+      <a href="tel:+79211234567">+7 921 123-45-67</a><br>
+      <a href="mailto:info@modstudio.com">info@modstudio.com</a>
+    </address>
+    <p>A product of <span>MOD</span></p>
+    <p>© 2023 Mod Media. All rights reserved</p>
+  </footer>
+
+</body>
+
+</html>
