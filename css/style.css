@@ -1,0 +1,321 @@
+/*общие стили*/
+body {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+  /* лучше вынести этот цвет в общие стили, так как он часто используется*/
+  color: #000000;
+  /* идеально если студенты еще найдут часто повторяемый font-size & line-height и занесут в body*/
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section-title {
+  /*если это свойство есть в бади, то можно не указывать*/
+  /* font-family: "Roboto", serif; */
+  /* font-style: normal; */
+  font-weight: 700;
+
+  /*размеры шрифта*/
+  font-size: 24px;
+  /*значения типа 28.13 лучше округлять, так как 0.13 пикселя не нарисуется*/
+  line-height: 28px;
+}
+
+/*header*/
+
+.header-logo {
+  /*настройка шрифта*/
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+
+  /*если это свойство есть в бади, то можно тут удалить*/
+  font-style: normal;
+
+  /*размеры шрифта*/
+  font-size: 86px;
+  /*значения типа 103.2 лучше округлять, так как 0.2 пикселя не нарисуется*/
+  line-height: 103px;
+}
+
+.header-nav-link {
+  /*если это свойство есть в бади, то можно не указывать*/
+  /* font-family: "Roboto", serif; */
+  /* font-weight: 500; */
+  /* font-style: normal; */
+
+  /*размеры шрифта*/
+  font-size: 24px;
+  /*значения типа 28.2 лучше округлять, так как 0.2 пикселя не нарисуется*/
+  line-height: 28px;
+}
+
+/*hero*/
+
+.hero-title {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  /*если это свойство есть в бади, то можно не указывать*/
+  /* font-weight: 500; */
+  /* font-style: normal; */
+
+  /*размеры шрифта*/
+  font-size: 86px;
+  /*значения типа 103.2 лучше округлять, так как 0.2 пикселя не нарисуется*/
+  line-height: 103px;
+}
+
+.hero-text {
+  /*если это свойство есть в бади, то можно не указывать*/
+  /* font-family: "Roboto", serif; */
+  /* font-weight: 500; */
+  /* font-style: normal; */
+
+  /*размеры шрифта*/
+  font-size: 20px;
+  /*значения типа 23.44 лучше округлять, так как 0.44 пикселя не нарисуется*/
+  line-height: 23px;
+}
+
+/*biography*/
+
+.biography-subtitle {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  /*если это свойство есть в бади, то можно не указывать*/
+  /* font-weight: 500; */
+  /* font-style: normal; */
+
+  /*размеры шрифта*/
+  font-size: 86px;
+  /*значения типа 114.64 лучше округлять, так как 0.64 пикселя не нарисуется*/
+  line-height: 115px;
+}
+
+.biography-content {
+  /*если это свойство есть в бади, то можно не указывать*/
+  /* font-family: "Roboto", serif; */
+  /* font-weight: 500; */
+  /* font-style: normal; */
+
+  /*размеры шрифта*/
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.biography-blockquote {
+  font-family: Bitter;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  /*если это свойство есть в бади, то можно не указывать*/
+  /* font-style: normal; */
+
+  /*размеры шрифта*/
+  font-size: 26px;
+  /*значения должно быть округленным*/
+  line-height: 31px;
+}
+
+/*designers*/
+
+.designers-name {
+  /*если это свойство есть в бади, то можно не указывать*/
+  /* font-family: "Roboto", serif; */
+  /* font-style: normal; */
+  font-weight: 700;
+
+  /*размеры шрифта*/
+  font-size: 16px;
+  /*значения должно быть округленным*/
+  line-height: 18px;
+
+  text-transform: uppercase;
+}
+
+/* этот селектор можно объединить с  designers-name через запятую - только обязтельно должен быть uppercase в designers-name*/
+.designers-desc {
+  /*если это свойство есть в бади, то можно не указывать*/
+  /* font-family: "Roboto", serif; */
+  /* font-weight: 500; */
+  /* font-style: normal; */
+
+  /*размеры шрифта*/
+  font-size: 16px;
+  /*значения должно быть округленным*/
+  line-height: 18px;
+}
+
+.designers-desc-bold {
+  font-weight: 700;
+}
+
+/*--------------*/
+/*
+идеальный вариант для секции designer - когда стили для designers-name & designers-desc вынесены в designers-item
+вместо строки 125-155 можно сделать строки 161 - 173
+*/
+.designers-item {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.designers-name {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.designers-desc-bold {
+  font-weight: 700;
+}
+
+/*--------------*/
+
+/*testimonials*/
+
+.testimonials-item-text {
+  /*если это свойство есть в бади, то можно не указывать*/
+  /* font-family: "Roboto", serif; */
+  /* font-style: normal; */
+  font-weight: 700;
+
+  /*размеры шрифта*/
+  font-size: 16px;
+  /*значения должно быть округленным*/
+  line-height: 19px;
+}
+
+.testimonials-item-link {
+  /*если это свойство есть в бади, то можно не указывать*/
+  /* font-family: "Roboto", serif; */
+  /* font-style: normal; */
+  font-weight: 400;
+
+  /*размеры шрифта*/
+  font-size: 16px;
+  /*значения должно быть округленным*/
+  line-height: 19px;
+}
+
+/*--------------*/
+/*
+идеальный вариант для секции testimonials - когда стили для testimonials-item-text & testimonials-item-link вынесены в testimonials-item
+вместо строки 179-200 можно сделать строки 206 - 225
+*/
+.testimonials-item {
+  /*если это свойство есть в бади, то можно не указывать*/
+  /* font-family: "Roboto", serif; */
+  /* font-style: normal; */
+  font-weight: 700;
+
+
+  /*размеры шрифта*/
+  font-size: 16px;
+  /*значения должно быть округленным*/
+  line-height: 19px;
+}
+
+.testimonials-item-text {
+  font-weight: 400;
+}
+
+/*--------------*/
+
+.testimonials-blockquote {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  /*если это свойство есть в бади, то можно не указывать*/
+  /* font-style: normal; */
+
+  /*размеры шрифта*/
+  font-size: 32px;
+  /*значения должно быть округленным*/
+  line-height: 38px;
+}
+
+/*strong-points*/
+
+.strong-points-subtitle {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  /*если это свойство есть в бади, то можно не указывать*/
+  /* font-weight: 500; */
+  /* font-style: normal; */
+
+  /*размеры шрифта*/
+  font-size: 86px;
+  line-height: 86px;
+}
+
+.strong-points-item {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  /*если это свойство есть в бади, то можно не указывать*/
+  /* font-style: normal; */
+
+  /*размеры шрифта*/
+  font-size: 34px;
+  /*значения должно быть округленным*/
+  line-height: 41px;
+}
+
+/*footer*/
+
+.footer {
+  color: #FFFFFF;
+  background-color: #0D0D0D;
+}
+
+.footer-contacts {
+  /*если это свойство есть в бади, то можно не указывать*/
+  /* font-family: "Roboto", serif; */
+  font-weight: 400;
+
+  /*размеры шрифта*/
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.footer-desc {
+  /*если это свойство есть в бади, то можно не указывать*/
+  /* font-family: "Roboto", serif; */
+  /* font-weight: 500; */
+  /* font-style: normal; */
+
+  /*размеры шрифта*/
+  font-size: 18px;
+
+  /*значения должно быть округленным*/
+  line-height: 21px;
+}
+
+
+.footer-logo {
+  /*если это свойство есть в бади, то можно не указывать*/
+  /* font-family: "Roboto", serif; */
+  /* font-style: normal; */
+  font-weight: 900;
+
+  /*размеры шрифта*/
+  font-size: 24px;
+
+  /*значения должно быть округленным*/
+  line-height: 28px;
+}
+
+.footer-date {
+  /*если это свойство есть в бади, то можно не указывать*/
+  /* font-family: "Roboto", serif; */
+  /* font-style: normal; */
+  font-weight: 400;
+
+  /*размеры шрифта*/
+  font-size: 16px;
+  /*значения должно быть округленным*/
+  line-height: 19px;
+}
